@@ -4,10 +4,13 @@ const express = require('express');
 const mongoose = require('mongoose');
 const Link = require('./models/linkModel');
 const dotenv = require('dotenv');
+const helmet = require('helmet');
 const mongoSanitize = require('express-mongo-sanitize');
 const xss = require('xss-clean');
 
 const app = express();
+
+app.use(helmet());
 
 app.set('view engine', 'ejs');
 app.set('views', path.resolve(__dirname + '/views'));
