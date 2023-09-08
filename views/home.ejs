@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Make URL's shorter.">
+    <meta name="keywords" content="URL, Short, Shortener">
+    <link rel="icon" type="image/x-icon" href="/images/logo.svg">
+    <title>Link Shortener | Developed by Razmik Matinyan</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">URL Shortener</h1>
+
+        <div class="form">
+            <div class="input-wrapper">
+                <input type="text" placeholder="https://example.com" name="url" id="url" class="input" value="">
+                <span id="error">URL is required!</span>
+            </div>
+            <button type="button" id="gen-btn" class="btn">Generate</button>
+        </div>
+        
+        <span class="result"></span>
+
+        <script src="/js/home.js"></script>
+    </div>
+</body>
+</html>
