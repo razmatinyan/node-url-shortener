@@ -2,7 +2,7 @@ document.querySelector('#gen-btn').addEventListener('click', shortenURL)
 
 function shortenURL() {
     const xhr = new XMLHttpRequest();
-    xhr.open("POST", 'https://shorturl-u5pu.onrender.com/', true);
+    xhr.open("POST", 'https://shorturl-u5pu.onrender.com/url', true);
     xhr.setRequestHeader('Content-type', 'application/json; charset=UTF-8');
     xhr.send(
         JSON.stringify({
